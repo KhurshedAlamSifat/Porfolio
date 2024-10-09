@@ -1,11 +1,10 @@
-<mat-toolbar color="primary">
-    <span>Khurshed Alam Sifat</span>
-    <span class="spacer"></span>
-    <nav>
-      <a mat-button routerLink="#" (click)="scrollTo('home')">Home</a>
-      <a mat-button routerLink="#" (click)="scrollTo('about')">About</a>
-      <a mat-button routerLink="#" (click)="scrollTo('projects')">Projects</a>
-      <a mat-button routerLink="#" (click)="scrollTo('contact')">Contact</a>
-    </nav>
-  </mat-toolbar>
-  
+<mat-toolbar color="primary" class="header-toolbar">
+  <span class="logo animated-logo">Khurshed Alam Sifat</span>
+  <span class="spacer"></span>
+  <nav class="toolbar-nav">
+    <a mat-button routerLink="#" (click)="scrollTo('home')" class="nav-link">Home</a>
+    <a mat-button routerLink="#" (click)="scrollTo('about')" class="nav-link">About</a>
+    <a mat-button routerLink="#" (click)="scrollTo('projects')" class="nav-link">Projects</a>
+    <a mat-button routerLink="#" (click)="scrollTo('contact')" class="nav-link">Contact</a>
+  </nav>
+</mat-toolbar>

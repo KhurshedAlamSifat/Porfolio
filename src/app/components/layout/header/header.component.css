@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+.header-toolbar {
+    background-color: var(--primary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 0 20px;
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif; /* Using Montserrat font */
+    font-size: 2em; /* Size of the logo text */
+    color: var(--accent-color); /* Accent color for the logo */
+    font-weight: 700; /* Bold weight for prominence */
+    animation: fadeIn 0.7s ease-in-out; /* Initial fade-in animation */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px); /* Start from above */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End in place */
+    }
+}
+
+/* Hover effect for logo */
+.logo:hover {
+    animation: bounce 0.5s; /* Add a bounce effect on hover */
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px); /* Lift effect */
+    }
+    60% {
+        transform: translateY(-5px); /* Slight lift */
+    }
+}
+
+.toolbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    color: #fdfdcb; /* Text color for links */
+    margin-left: 20px; /* Space between navigation links */
+    transition: color 0.3s ease; /* Smooth color transition */
+    position: relative; /* For hover effect */
+}
+
+.nav-link:hover {
+    color: var(--accent-color); /* Change color on hover */
+}
+
+/* Adding a bottom border on hover */
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--accent-color);
+    transition: width 0.3s ease;
+    position: absolute;
+    bottom: -5px; /* Adjust as necessary */
+    left: 0;
+}
+
+.nav-link:hover::after {
+    width: 100%; /* Full width on hover */
+}
+
+/* Adding Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');

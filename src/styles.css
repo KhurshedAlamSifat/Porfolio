@@ -13,7 +13,7 @@
 }
 
 body {
-  background-color: var(--primary-color);
+  background: linear-gradient(135deg, var(--secondary-color), #2e3d18);
   color: var(--text-color);
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
